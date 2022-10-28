@@ -1,0 +1,5 @@
+fastai==2.7.9
+fastcore==1.5.22
+fastdownload==0.0.7
+fastjsonschema==2.16.1
+fastprogress==1.0.3

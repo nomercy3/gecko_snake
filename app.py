@@ -5,9 +5,11 @@ learn_inf = load_learner('export.pkl')
 
 categories = ('Snake', 'Gecko')
 
+
 def classify_img(img):
     pred, idx, probs = learn_inf.predict(img)
     return dict(zip(categories, map(float, probs)))
+
 
 image = gr.inputs.Image(shape=(192, 192))
 label = gr.outputs.Label()
